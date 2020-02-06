@@ -7,12 +7,12 @@ public class PhoneBook {
 
 
     public void put(String lastName, String tel) {
-        if (map.containsKey(lastName)) {  //если нашли ключ
-            s = map.get(lastName); //читаем значение по ключу из мапы и присваиваем ArrayList
-            s.add(tel); //добавляем номер в ArrayList
-            map.put(lastName, s);   //заносим в мапу
+        if (map.containsKey(lastName)) {   //если нашли ключ
+            s = map.get(lastName);  //читаем значение по ключу из мапы и присваиваем ArrayList
+            s.add(tel);  //добавляем номер в ArrayList
+            map.put(lastName, s);    //заносим в мапу
         } else {
-            s = new ArrayList<>();  //создаем новый ArrayList
+            s = new ArrayList<>();   //создаем новый ArrayList
             s.add(tel);
             map.put(lastName, s);
         }
